@@ -71,7 +71,7 @@ export default class WelcomeScreen extends Component {
 
             <Button  
               title="Register"
-                onPress={() => this.props.navigation.navigate('RegistrationScreen')}
+                onPress={() => this.props.navigation.navigate('Registration')}
                 //onPress={() => this.navigate('RegistrationScreen')}
             />
 

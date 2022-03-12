@@ -13,44 +13,39 @@ import RegistrationScreen from './app/screens/RegistrationScreen';
 
 const Stack = createNativeStackNavigator();
 
-function nav(){
-  return(
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName="Welcome">
+export default function app() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Welcome">
 
-    <Stack.Screen name="Trackly" component={WelcomeScreen} />
-      
-    <Stack.Screen name="Registration" component={RegistrationScreen} />
-      
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
 
-    </Stack.Navigator>
-  </NavigationContainer>
+        <Stack.Screen name="Registration" component={RegistrationScreen} />
+
+
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
 
-nav()
+// export function App() {
+//   return <WelcomeScreen />;
+// }
+// export function Register() {
+//   return <RegistrationScreen />;
+// }
+// export function index() {
+//   return <index />;
+// }
+// export function Config() {
+//   return <Config />;
+// }
 
 
 
 
-export default function App() {
-  return <WelcomeScreen />;
-}
-export function Register() {
-  return <RegistrationScreen />;
-}
-export function index() {
-  return <index />;
-}
-export function Config() {
-  return <Config />;
-}
 
-
-
-    
-    
 
 
 
